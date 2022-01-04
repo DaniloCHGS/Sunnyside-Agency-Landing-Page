@@ -46,42 +46,7 @@ body {
 .header svg {
   position: absolute;
   left: 50%;
-  top: -30%;
-}
-
-.anm-introArrow {
-  -webkit-animation-name: introArrow;
-          animation-name: introArrow;
-  -webkit-animation-duration: 3s;
-          animation-duration: 3s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-delay: 2s;
-          animation-delay: 2s;
-}
-
-@-webkit-keyframes introArrow {
-  0% {
-    top: -30%;
-  }
-  70% {
-    top: 60%;
-  }
-  100% {
-    top: 50%;
-  }
-}
-
-@keyframes introArrow {
-  0% {
-    top: -30%;
-  }
-  70% {
-    top: 60%;
-  }
-  100% {
-    top: 50%;
-  }
+  top: 50%;
 }
 
 .navbar {
@@ -143,5 +108,70 @@ body {
   color: #222 !important;
   text-transform: uppercase;
   font-weight: 700;
+}
+
+.op-0 {
+  opacity: 0;
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.anm-float {
+  -webkit-animation-name: float;
+          animation-name: float;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  animation-direction: alternate-reverse;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes float {
+  from {
+    top: 50%;
+  }
+  to {
+    top: 55%;
+  }
+}
+
+@keyframes float {
+  from {
+    top: 50%;
+  }
+  to {
+    top: 55%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

@@ -58,26 +58,7 @@ body {
 .header svg {
     position: absolute;
     left: 50%;
-    top: -30%;
-
-}
-.anm-introArrow {
-    // animation: name duration timing-function delay iteration-count direction fill-mode;
-    animation-name: introArrow;
-    animation-duration: 3s;
-    animation-timing-function: ease-in-out;
-    animation-delay: 2s;
-}
-@keyframes introArrow {
-    0% {
-        top: -30%;
-    }
-    70% {
-        top: 60%;
-    }
-    100% {
-        top: 50%;
-    }
+    top: 50%;
 }
 .navbar {
     position: absolute;
@@ -124,4 +105,42 @@ body {
     color: #222!important;
     text-transform: uppercase;
     font-weight: 700;
+}
+.op-0 {
+    opacity: 0;
+}
+
+// Animações
+.fadeIn {
+    // animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: .5s;
+    animation-fill-mode: both;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.anm-float {
+    // animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation-name: float;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+@keyframes float {
+    from {
+        top: 50%;
+    }
+    to {
+        top: 55%;
+    }
 }
