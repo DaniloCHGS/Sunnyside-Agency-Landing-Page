@@ -280,4 +280,15 @@ article.container-texts a {
 .fig-blue p {
   color: #19536b;
 }
+
+.container-testimonial {
+  width: 1440px;
+}
+
+.container-testimonial h4 {
+  color: #a7abae;
+  text-align: center;
+  font-family: "Fraunces", serif;
+  font-weight: 600;
+}
 /*# sourceMappingURL=style.css.map */
