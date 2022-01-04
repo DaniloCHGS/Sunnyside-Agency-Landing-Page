@@ -21,6 +21,67 @@ body {
   font-family: 'Fraunces', serif;
 }
 
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 1.5s;
+          animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: .5s;
+          animation-delay: .5s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.anm-float {
+  -webkit-animation-name: float;
+          animation-name: float;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  animation-direction: alternate-reverse;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes float {
+  from {
+    top: 50%;
+  }
+  to {
+    top: 55%;
+  }
+}
+
+@keyframes float {
+  from {
+    top: 50%;
+  }
+  to {
+    top: 55%;
+  }
+}
+
 .header {
   height: 100vh;
   background-image: url(../img/image-header.jpg);
@@ -36,7 +97,6 @@ body {
 
 .header h1 {
   color: white;
-  font-size: 30px;
   font-size: 100px;
   margin-top: 200px;
   text-transform: uppercase;
@@ -114,64 +174,55 @@ body {
   opacity: 0;
 }
 
-.fadeIn {
-  -webkit-animation-name: fadeIn;
-          animation-name: fadeIn;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  -webkit-animation-delay: .5s;
-          animation-delay: .5s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
+.services {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
 }
 
-@-webkit-keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+article.container-texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-@keyframes fadeIn {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
+.texts {
+  width: 500px;
 }
 
-.anm-float {
-  -webkit-animation-name: float;
-          animation-name: float;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-timing-function: ease-in-out;
-          animation-timing-function: ease-in-out;
-  animation-direction: alternate-reverse;
-  -webkit-animation-iteration-count: infinite;
-          animation-iteration-count: infinite;
+article.container-texts h2 {
+  font-size: 50px;
+  color: #23303e;
+  font-weight: 800;
+  font-family: 'Fraunces', serif;
+  margin-bottom: 40px;
 }
 
-@-webkit-keyframes float {
-  from {
-    top: 50%;
-  }
-  to {
-    top: 55%;
-  }
+article.container-texts p {
+  color: #23303e;
+  font-family: 'Barlow', serif;
+  font-weight: 400;
+  margin-bottom: 40px;
+  max-width: 400px;
+  line-height: 30px;
 }
 
-@keyframes float {
-  from {
-    top: 50%;
-  }
-  to {
-    top: 55%;
-  }
+article.container-texts a {
+  color: #222;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 800;
+  font-family: "Fraunces", serif;
 }
 /*# sourceMappingURL=style.css.map */

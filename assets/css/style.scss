@@ -39,6 +39,42 @@ body {
 .font-fraunces {
     font-family: 'Fraunces', serif;
 }
+
+// Animações
+.fadeIn {
+    // animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation-name: fadeIn;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: .5s;
+    animation-fill-mode: both;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.anm-float {
+    // animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation-name: float;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate-reverse;
+    animation-iteration-count: infinite;
+}
+@keyframes float {
+    from {
+        top: 50%;
+    }
+    to {
+        top: 55%;
+    }
+}
+
 .header {
     height: 100vh;
     background-image: url(../img/image-header.jpg);
@@ -49,7 +85,6 @@ body {
 }
 .header h1 {
     color: $white;
-    font-size: 30px;
     font-size: 100px;
     margin-top: 200px;
     text-transform: uppercase;
@@ -109,38 +144,39 @@ body {
 .op-0 {
     opacity: 0;
 }
-
-// Animações
-.fadeIn {
-    // animation: name duration timing-function delay iteration-count direction fill-mode;
-    animation-name: fadeIn;
-    animation-duration: 1.5s;
-    animation-timing-function: ease-in-out;
-    animation-delay: .5s;
-    animation-fill-mode: both;
+.services {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
+article.container-texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
-.anm-float {
-    // animation: name duration timing-function delay iteration-count direction fill-mode;
-    animation-name: float;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    animation-direction: alternate-reverse;
-    animation-iteration-count: infinite;
+.texts {
+    width: 500px;
 }
-@keyframes float {
-    from {
-        top: 50%;
-    }
-    to {
-        top: 55%;
-    }
+article.container-texts h2 {
+    font-size: 50px;
+    color: $very-darkdesatur-ted;
+    font-weight: 800;
+    font-family: 'Fraunces', serif;
+    margin-bottom: 40px;
+}
+article.container-texts p {
+    // font-size: 50px;
+    color: $very-darkdesatur-ted;
+    font-family: 'Barlow', serif;
+    font-weight: 400;
+    margin-bottom: 40px;
+    max-width: 400px;
+    line-height: 30px;
+}
+article.container-texts a {
+	color: #222;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 800;
+	font-family: "Fraunces", serif;
 }
