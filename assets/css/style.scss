@@ -26,6 +26,11 @@ $dark-grayish:hsl(232, 10%, 55%);
 $grayish:hsl(210, 4%, 67%);
 $white: hsl(0, 0%, 100%);
 
+body {
+    position: relative;
+    scroll-behavior: smooth;
+}
+
 .font-barlow {
     font-family: 'Barlow', sans-serif;
     font-weight: 600;
@@ -58,4 +63,23 @@ $white: hsl(0, 0%, 100%);
     position: absolute;
     left: 50%;
     top: 50%;
+}
+.navbar {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    z-index: 1;
+}
+.container-navbar {
+    width: 100%;
+    padding: 0 30px;
+
+    display: flex;
+    justify-content: space-between;
+}
+.nav-menu {
+    display: flex;
+}
+.nav-menu li {
+    list-style: none;
 }
