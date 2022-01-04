@@ -39,12 +39,6 @@ body {
 .font-fraunces {
     font-family: 'Fraunces', serif;
 }
-.weight-700 {
-    font-weight: 700;
-}
-.weight-900 {
-    font-weight: 900;
-}
 .header {
     height: 100vh;
     background-image: url(../img/image-header.jpg);
@@ -58,6 +52,8 @@ body {
     font-size: 30px;
     font-size: 100px;
     margin-top: 200px;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 .header svg {
     position: absolute;
@@ -81,5 +77,32 @@ body {
     display: flex;
 }
 .nav-menu li {
-    list-style: none;
+	list-style: none;
+	margin: 0 10px;
+	transition: all .3s ease-in-out;
+	padding: 10px 25px;
+	border-radius: 30px;
+}
+.nav-menu li:hover:not(.active) {
+    background-color: rgba(255, 255, 255, .3);
+    color: $white;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.nav-menu li:hover .item-menu {
+    text-transform: uppercase;
+    color: $white;
+}
+.item-menu {
+    color: $white;
+    text-decoration: none;
+    font-weight: 600;
+}
+.active {
+    background-color: white;
+}
+.active .item-menu {
+    color: #222!important;
+    text-transform: uppercase;
+    font-weight: 700;
 }
