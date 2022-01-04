@@ -23,4 +23,30 @@
 .weight-900 {
   font-weight: 900;
 }
+
+.header {
+  height: 100vh;
+  background-image: url(../img/image-header.jpg);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.header h1 {
+  color: white;
+  font-size: 30px;
+  font-size: 100px;
+  margin-top: 200px;
+}
+
+.header svg {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
 /*# sourceMappingURL=style.css.map */

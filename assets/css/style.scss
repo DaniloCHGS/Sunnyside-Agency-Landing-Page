@@ -20,7 +20,6 @@ $dark-blue:hsl(198, 62%, 26%);
 $dark-moderate:hsl(168, 34%, 41%);
 
 // Color Neutral
-
 $very-darkdesatur-ted: hsl(212, 27%, 19%);
 $very-darkgrayish-blue: hsl(213, 9%, 39%);
 $dark-grayish:hsl(232, 10%, 55%);
@@ -40,4 +39,23 @@ $white: hsl(0, 0%, 100%);
 }
 .weight-900 {
     font-weight: 900;
+}
+.header {
+    height: 100vh;
+    background-image: url(../img/image-header.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.header h1 {
+    color: $white;
+    font-size: 30px;
+    font-size: 100px;
+    margin-top: 200px;
+}
+.header svg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
 }
