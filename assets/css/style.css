@@ -46,7 +46,42 @@ body {
 .header svg {
   position: absolute;
   left: 50%;
-  top: 50%;
+  top: -30%;
+}
+
+.anm-introArrow {
+  -webkit-animation-name: introArrow;
+          animation-name: introArrow;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
+}
+
+@-webkit-keyframes introArrow {
+  0% {
+    top: -30%;
+  }
+  70% {
+    top: 60%;
+  }
+  100% {
+    top: 50%;
+  }
+}
+
+@keyframes introArrow {
+  0% {
+    top: -30%;
+  }
+  70% {
+    top: 60%;
+  }
+  100% {
+    top: 50%;
+  }
 }
 
 .navbar {

@@ -58,7 +58,26 @@ body {
 .header svg {
     position: absolute;
     left: 50%;
-    top: 50%;
+    top: -30%;
+
+}
+.anm-introArrow {
+    // animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation-name: introArrow;
+    animation-duration: 3s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2s;
+}
+@keyframes introArrow {
+    0% {
+        top: -30%;
+    }
+    70% {
+        top: 60%;
+    }
+    100% {
+        top: 50%;
+    }
 }
 .navbar {
     position: absolute;
