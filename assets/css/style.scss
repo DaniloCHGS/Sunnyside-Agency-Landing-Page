@@ -151,6 +151,7 @@ figure {
 .services {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    width: $cont-desktop-width;
 }
 article.container-texts {
     display: flex;
@@ -183,4 +184,40 @@ article.container-texts a {
 	text-decoration: none;
 	font-weight: 800;
 	font-family: "Fraunces", serif;
+}
+.in-figcaption {
+    position: relative;
+}
+.in-figcaption figcaption {
+    position: absolute;
+    top: 70%;
+    left: 0;
+    text-align: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+.in-figcaption figcaption h3 {
+    font-weight: 600;
+    margin: 0;
+    font-family: "Fraunces", serif;
+    margin-bottom: 30px;
+}
+.in-figcaption figcaption p {
+    max-width: 412px;
+    font-weight: 600;
+}
+.fig-green h3 {
+    color: $dark-desaturated;
+}
+.fig-green p {
+    color: $dark-moderate;
+}
+.fig-blue h3 {
+    color: $very-darkdesatur-ted;
+}
+.fig-blue p {
+    color: $dark-blue;
 }

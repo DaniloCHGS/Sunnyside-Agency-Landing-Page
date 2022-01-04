@@ -183,6 +183,7 @@ figure {
   display: grid;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
+  width: 1440px;
 }
 
 article.container-texts {
@@ -228,5 +229,55 @@ article.container-texts a {
   text-decoration: none;
   font-weight: 800;
   font-family: "Fraunces", serif;
+}
+
+.in-figcaption {
+  position: relative;
+}
+
+.in-figcaption figcaption {
+  position: absolute;
+  top: 70%;
+  left: 0;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+
+.in-figcaption figcaption h3 {
+  font-weight: 600;
+  margin: 0;
+  font-family: "Fraunces", serif;
+  margin-bottom: 30px;
+}
+
+.in-figcaption figcaption p {
+  max-width: 412px;
+  font-weight: 600;
+}
+
+.fig-green h3 {
+  color: #25564b;
+}
+
+.fig-green p {
+  color: #458c7e;
+}
+
+.fig-blue h3 {
+  color: #23303e;
+}
+
+.fig-blue p {
+  color: #19536b;
 }
 /*# sourceMappingURL=style.css.map */
