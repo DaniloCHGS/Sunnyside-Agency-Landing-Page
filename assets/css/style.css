@@ -12,6 +12,10 @@ body {
   scroll-behavior: smooth;
 }
 
+figure {
+  margin: 0;
+}
+
 .font-barlow {
   font-family: 'Barlow', sans-serif;
   font-weight: 600;
