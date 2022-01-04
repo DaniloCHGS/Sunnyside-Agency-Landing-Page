@@ -283,6 +283,7 @@ article.container-texts a {
 
 .container-testimonial {
   width: 1440px;
+  padding: 130px 0;
 }
 
 .container-testimonial h4 {
@@ -290,5 +291,52 @@ article.container-texts a {
   text-align: center;
   font-family: "Fraunces", serif;
   font-weight: 600;
+  margin-bottom: 80px;
+  text-transform: uppercase;
+}
+
+.testimonial {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.client {
+  width: 347px;
+  text-align: center;
+}
+
+.photo {
+  width: 60px;
+  height: 60px;
+  border-radius: 50px;
+  overflow: hidden;
+  background-size: cover;
+  margin: 0 auto;
+}
+
+.client h5 {
+  color: #23303e;
+  font-weight: 800;
+  font-family: "Fraunces", serif;
+}
+
+.client p {
+  margin-top: 60px;
+  line-height: 30px;
+  font-weight: 700;
+  color: #818498;
+}
+
+.client span {
+  color: #a7abae;
+  font-weight: 600;
+  font-family: "Barlow", serif;
+  font-size: 14px;
 }
 /*# sourceMappingURL=style.css.map */

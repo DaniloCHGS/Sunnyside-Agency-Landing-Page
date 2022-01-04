@@ -223,13 +223,48 @@ article.container-texts a {
 }
 .container-testimonial {
     width: $cont-desktop-width;
+    padding: 130px 0;
 }
 .container-testimonial h4 {
     color: $grayish;
     text-align: center;
     font-family: "Fraunces", serif;
     font-weight: 600;
+    margin-bottom: 80px;
+    text-transform: uppercase;
 }
 .testimonial {
-    
+    display: flex;
+    align-items: center;
+    justify-content:space-around;
+}
+.client {
+	width: 347px;
+	text-align: center;
+}
+.photo {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    overflow: hidden;
+    // background-image: url(../img//image-emily.jpg);
+    background-size: cover;
+    margin: 0 auto;
+}
+.client h5 {
+    color: $very-darkdesatur-ted;
+    font-weight: 800;
+    font-family: "Fraunces", serif;
+}
+.client p {
+    margin-top: 60px;
+    line-height: 30px;
+    font-weight: 700;
+    color: $dark-grayish;
+}
+.client span {
+    color: $grayish;
+    font-weight: 600;
+    font-family: "Barlow", serif;
+    font-size: 14px;
 }
