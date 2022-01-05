@@ -235,8 +235,7 @@ article.container-texts a {
 .fig-blue p {
     color: $dark-blue;
 }
-.container-testimonial {
-    // width: $cont-desktop-width;
+.container-testimonial .container, footer .container {
     padding: 130px 0;
 }
 .container-testimonial h4 {
