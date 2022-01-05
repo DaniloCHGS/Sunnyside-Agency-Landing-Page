@@ -93,6 +93,7 @@ figure {
     margin-top: 200px;
     text-transform: uppercase;
     font-weight: 700;
+    font-family: "Fraunces", serif;
 }
 .header svg {
     position: absolute;
@@ -267,4 +268,28 @@ article.container-texts a {
     font-weight: 600;
     font-family: "Barlow", serif;
     font-size: 14px;
+}
+.pre-footer {
+    width: $cont-desktop-width;
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+}
+.pre-footer img {
+
+}
+footer {
+    width: $cont-desktop-width!important;
+    background-color: $dark-moderate;
+    padding: 100px 0
+}
+footer .col-lg-12 > div, footer .col-lg-12 > nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.tite-footer h6 {
+    font-size: 30px;
+    font-family: "Barlow", serif;
+    font-weight: 600;
+    color: $dark-desaturated;
 }

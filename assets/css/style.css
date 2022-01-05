@@ -105,6 +105,7 @@ figure {
   margin-top: 200px;
   text-transform: uppercase;
   font-weight: 700;
+  font-family: "Fraunces", serif;
 }
 
 .header svg {
@@ -338,5 +339,38 @@ article.container-texts a {
   font-weight: 600;
   font-family: "Barlow", serif;
   font-size: 14px;
+}
+
+.pre-footer {
+  width: 1440px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (auto)[4];
+      grid-template-columns: repeat(4, auto);
+}
+
+footer {
+  width: 1440px !important;
+  background-color: #458c7e;
+  padding: 100px 0;
+}
+
+footer .col-lg-12 > div, footer .col-lg-12 > nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.tite-footer h6 {
+  font-size: 30px;
+  font-family: "Barlow", serif;
+  font-weight: 600;
+  color: #25564b;
 }
 /*# sourceMappingURL=style.css.map */
