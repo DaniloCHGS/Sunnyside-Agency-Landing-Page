@@ -290,6 +290,18 @@ footer .col-lg-12 > div, footer .col-lg-12 > nav {
 .tite-footer h6 {
     font-size: 30px;
     font-family: "Barlow", serif;
-    font-weight: 600;
+    font-weight: 800;
     color: $dark-desaturated;
+}
+.footerbar {
+    margin: 50px 0;
+}
+.footerbar a {
+    margin: 0 30px;
+    color: $dark-desaturated;
+    text-decoration: none;
+    font-weight: 600;
+}
+.social a {
+    margin: 0 20px;
 }
