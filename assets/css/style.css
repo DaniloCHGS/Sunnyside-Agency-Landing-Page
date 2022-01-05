@@ -25,7 +25,11 @@ figure {
   font-family: 'Fraunces', serif;
 }
 
-.container-fluid .container {
+.container-fluid {
+  padding: 0 !important;
+}
+
+.container {
   max-width: 1440px !important;
 }
 
@@ -285,7 +289,6 @@ article.container-texts a {
 }
 
 .container-testimonial {
-  width: 1440px;
   padding: 130px 0;
 }
 
@@ -352,7 +355,6 @@ article.container-texts a {
 }
 
 footer {
-  width: 1440px !important;
   background-color: #458c7e;
   padding: 100px 0;
 }
