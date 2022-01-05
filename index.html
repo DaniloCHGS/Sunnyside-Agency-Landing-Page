@@ -35,7 +35,23 @@
                     <li><a href="#" class="item-menu">Projects</a></li>
                     <li class="active"><a href="#" class="item-menu">Contact</a></li>
                 </ul>
+                <button class="btn-hmb">
+                    <img src="assets/img/icon-hamburger.svg" alt="">
+                </button>
             </div>
+        </nav>
+
+        <nav class="navbar-mobile op-0">
+                <ul class="nav-menu m-0">
+                    <li><a href="#" class="item-menu">About</a></li>
+                    <li><a href="#" class="item-menu">Services</a></li>
+                    <li><a href="#" class="item-menu">Projects</a></li>
+                    <li class="active"><a href="#" class="item-menu">Contact</a></li>
+                </ul>
+            </div>
+            <button class="btn-hmb">
+                <img src="assets/img/icon-hamburger.svg" alt="">
+            </button>
         </nav>
     
         <header class="container-fluid header">
@@ -211,5 +227,23 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="assets/js/main.js"></script>
+    <script>
+        const btnHmb = document.querySelector(".btn-hmb")
+        const navMobile = document.querySelector(".navbar-mobile")
+
+        var menuMobileOpen = false
+
+        btnHmb.addEventListener("click", ev=>{
+            if(!menuMobileOpen) {
+                navMobile.classList.add("showMenu")
+                navMobile.classList.remove("hideMenu")
+                menuMobileOpen = !menuMobileOpen
+            } else {
+                navMobile.classList.add("hideMenu")
+                navMobile.classList.remove("showMenu")
+                menuMobileOpen = !menuMobileOpen
+            }
+        })
+    </script>
 </body>
 </html>

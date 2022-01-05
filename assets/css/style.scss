@@ -70,6 +70,38 @@ figure {
     }
 }
 
+.showMenu {
+    // animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation-name: showMenu;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+}
+@keyframes showMenu {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.hideMenu {
+    // animation: name duration timing-function delay iteration-count direction fill-mode;
+    animation-name: hideMenu;
+    animation-duration: .5s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: both;
+}
+@keyframes hideMenu {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
 .anm-float {
     // animation: name duration timing-function delay iteration-count direction fill-mode;
     animation-name: float;
