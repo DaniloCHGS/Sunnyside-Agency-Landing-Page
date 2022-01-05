@@ -44,6 +44,11 @@ figure {
     font-family: 'Fraunces', serif;
 }
 
+.container-fluid .container {
+    max-width: $cont-desktop-width!important;
+}
+
+
 // Animações
 .fadeIn {
     // animation: name duration timing-function delay iteration-count direction fill-mode;
@@ -149,16 +154,21 @@ figure {
 .op-0 {
     opacity: 0;
 }
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+
 .services {
     display: grid;
     grid-template-columns: 1fr 1fr;
     width: $cont-desktop-width;
 }
 article.container-texts {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    
 }
 .texts {
     width: 500px;
