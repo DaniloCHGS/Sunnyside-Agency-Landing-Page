@@ -141,6 +141,23 @@ figure {
     left: 50%;
     top: 50%;
 }
+.learn {
+    position: relative;
+    z-index: 1;
+    transition: all .3s ease-in-out;
+}
+.learn::after {
+    content: " ";
+    width: 125px;
+    height: 7px;
+    position: absolute;
+    bottom: 0;
+    left: -5px;
+    border-radius: 50px;
+    background: $yellow;
+    opacity: .3;
+    z-index: -1;
+}
 
 // Navbar
 .navbar {
