@@ -119,6 +119,7 @@ figure {
     }
 }
 
+// Cabeçalho
 .header {
     height: 100vh;
     background-image: url(../img/image-header.jpg);
@@ -140,6 +141,8 @@ figure {
     left: 50%;
     top: 50%;
 }
+
+// Navbar
 .navbar {
     position: absolute;
     top: 30px;
@@ -198,6 +201,7 @@ figure {
     align-items: center;
 }
 
+// Serviços
 .services {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -279,6 +283,8 @@ article.container-texts a {
     margin-bottom: 80px;
     text-transform: uppercase;
 }
+
+// Testimonial
 .testimonial {
     display: flex;
     align-items: center;
@@ -314,6 +320,8 @@ article.container-texts a {
     font-family: "Barlow", serif;
     font-size: 14px;
 }
+
+// Pre footer
 .pre-footer {
     width: $cont-desktop-width;
     display: grid;
@@ -322,6 +330,8 @@ article.container-texts a {
 .pre-footer img {
 
 }
+
+// Footer
 footer {
     // width: $cont-desktop-width!important;
     background-color: $dark-moderate;
