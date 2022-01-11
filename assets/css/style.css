@@ -262,6 +262,31 @@ figure {
           align-items: center;
 }
 
+.fixed {
+  position: fixed;
+  top: 0;
+  background: white;
+  height: 74px;
+}
+
+.navbar.fixed .item-menu {
+  color: #222;
+}
+
+.navbar.fixed .active .item-menu {
+  color: white !important;
+}
+
+.navbar.fixed li:hover:not(.active) {
+  background-color: #222;
+  color: white;
+}
+
+.navbar.fixed .active {
+  background-color: #222;
+  color: white;
+}
+
 .services {
   display: -ms-grid;
   display: grid;
