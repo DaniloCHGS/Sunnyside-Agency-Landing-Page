@@ -37,7 +37,8 @@
                     <li class="active"><a href="#" class="item-menu">Contact</a></li>
                 </ul>
                 <button class="btn-hmb">
-                    <img src="assets/img/icon-hamburger.svg" alt="">
+                    <svg width="24" height="18" xmlns="http://www.w3.org/2000/svg"><path d="M24 16v2H0v-2h24zm0-8v2H0V8h24zm0-8v2H0V0h24z" fill="#FFF" fill-rule="evenodd"/></svg>
+                    <!-- <img src="assets/img/icon-hamburger.svg" alt=""> -->
                 </button>
             </div>
         </nav>
@@ -243,6 +244,16 @@
                 navMobile.classList.add("hideMenu")
                 navMobile.classList.remove("showMenu")
                 menuMobileOpen = !menuMobileOpen
+            }
+        })
+
+        const navbar = document.querySelector(".navbar")
+
+        window.addEventListener("scroll", ev=>{
+            if(window.pageYOffset >= 80) {
+                navbar.classList.add("fixed")
+            } else {
+                navbar.classList.remove("fixed")
             }
         })
     </script>

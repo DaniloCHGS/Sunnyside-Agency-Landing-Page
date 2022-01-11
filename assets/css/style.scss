@@ -221,6 +221,16 @@ figure {
     color: white;
 }
 
+//Logo
+.navbar.fixed svg.logo path {
+    fill: #222;
+}
+
+// Botão menu mobile
+.navbar.fixed .btn-hmb svg path{
+    fill: #222;
+}
+
 // Serviços
 .services {
     display: grid;

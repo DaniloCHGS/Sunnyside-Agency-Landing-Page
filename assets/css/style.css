@@ -287,6 +287,14 @@ figure {
   color: white;
 }
 
+.navbar.fixed svg.logo path {
+  fill: #222;
+}
+
+.navbar.fixed .btn-hmb svg path {
+  fill: #222;
+}
+
 .services {
   display: -ms-grid;
   display: grid;
