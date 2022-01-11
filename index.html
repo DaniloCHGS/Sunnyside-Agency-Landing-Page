@@ -247,21 +247,23 @@
             }
         })
 
+        // Controle do fixed ao scroll da navbar e inicialização
         const navbar = document.querySelector(".navbar")
+        const yOffSet = 80
 
-        window.addEventListener("scroll", ev=>{
-            if(window.pageYOffset >= 80) {
-                navbar.classList.add("fixed")
+        function addFixedNavbar(yOffSet){
+            if(window.pageYOffset >= yOffSet) {
+            navbar.classList.add("fixed")
             } else {
                 navbar.classList.remove("fixed")
             }
-        })
-
-        if(window.pageYOffset >= 80) {
-            navbar.classList.add("fixed")
-        } else {
-            navbar.classList.remove("fixed")
         }
+
+        // Scroll
+        window.addEventListener("scroll", ev=>{ addFixedNavbar(yOffSet) })
+        
+        // Inicialização
+        addFixedNavbar(yOffSet)
     </script>
 </body>
 </html>
