@@ -98,6 +98,11 @@
     .nav-menu {
         display: none;
     }
+    .client {
+        width: 220px;
+        text-align: center;
+        font-size: 15px;
+    }
 }
 
 @media(max-width: 425px){
@@ -135,6 +140,9 @@
     .btn-hmb {
         margin-right: 0;
     }
+    .navbar-mobile {
+        right: calc( (425px - 320px) / 2 );
+    }
 }
 
 @media(max-width: 375px){
@@ -159,5 +167,8 @@
     }
     .client p {
         margin-top: 25px;
+    }
+    .testimonial .col-lg-4 {
+
     }
 }
