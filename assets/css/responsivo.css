@@ -132,7 +132,32 @@
     .in-figcaption figcaption {
         top: 60%;
     }
-    footer .row div.col-lg-12 {
+    .btn-hmb {
+        margin-right: 0;
+    }
+}
 
+@media(max-width: 375px){
+    .navbar {
+        /* width: 375px; */
+    }
+    .navbar-mobile {
+        right: calc( (375px - 320px) / 2 );
+    }
+    .navbar {
+        width: 375px;
+    }
+    .in-figcaption figcaption p {
+        font-size: 13px;
+        max-width: 300px;
+    }
+    .in-figcaption figcaption h3 {
+        font-size: 20px;
+    }
+    .container-testimonial .container, footer .container {
+        padding: 70px 0;
+    }
+    .client p {
+        margin-top: 25px;
     }
 }
